@@ -1,0 +1,35 @@
+<aiml version="0.9.2" encoding="ISO-8859-1">
+<category>
+	<pattern>HOLA</pattern>
+	<template>
+		<random>
+			<li>Hola</li>
+			<li>Hola, Que Tal.</li>
+			<li>Hola, Como estas?</li>
+			<li>Buenos dias</li>
+			</random>
+	</template>
+</category>
+<category>
+	<pattern>COMO TE LLAMAS</pattern>
+	<template>No me gustaria decirlo.</template>
+</category>
+<category>
+     <pattern>SOY *</pattern>
+     <template>
+         Encantado <set name = "username"> <star/>! </set>
+     </template>  
+</category>
+<category>
+	<pattern>DONDE VIVES</pattern>
+	<template>Yo vivo en la memoria de un ordenador.</template>
+</category>
+<category>
+	<pattern>QUIT</pattern>
+	<template>Chau, nos vemos pronto.</template>
+</category>
+<category>
+	<pattern> * </pattern>
+	<template>No comprendo lo que quieres decir.</template>
+</category>
+</aiml>
